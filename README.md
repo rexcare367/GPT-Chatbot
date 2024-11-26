@@ -1,6 +1,6 @@
-<a href="https://chatbot-gpt4-lite.vercel.app/">
-    <h1 align="center"> GPT-4 Lite AI Chatbot </h1>
-</a>
+
+<h1 align="center"> GPT-4 Lite AI Chatbot </h1>
+
 <p align="center">
   An open-source AI chatbot app built with React 18, Next.js, OpenAI, and Supabase.
 </p>
@@ -16,12 +16,6 @@
 ## Description
 
 This project strives to develop an AI chatbot assistant designed to assist users with a wide range of tasks and provide answers to their queries. The chatbot leverages the capabilities of the [OpenAI](https://platform.openai.com/overview) API and service, enabling it to furnish users with valuable information and execute tasks on their behalf. The project is implemented in a [TypeScript](https://www.typescriptlang.org/) environment and hosted on [Vercel](https://vercel.com). To ensure reliability and performance, the chatbot deployed on an edge runtime.
-
-**Link:** [https://chatbot-gpt4-lite.vercel.app/](https://chatbot-gpt4-lite.vercel.app/)
-
-
-https://github.com/korebhaumik/GPT-Chatbot/assets/106856064/b903f30a-6e03-4000-b80f-ae258a522c02
-
 
 ## Features
 
@@ -45,9 +39,9 @@ This project comes with OpenAI `gpt-4-0134` , `gpt-3.5-turbo` as the fallback op
 const messages = [{ "User" : "Who is the president of America?" }]
 
 const response = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "gpt-4",
     messages,
-    temperature: 0.5,
+    temperature: 0.75,
     stream: true,
 });
 
